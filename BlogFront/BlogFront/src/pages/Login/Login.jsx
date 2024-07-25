@@ -3,8 +3,12 @@ import styles from "./Login.module.scss";
 
 import classNames from "classnames";
 import { Flex, Button, Input, Form } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const navigate = useNavigate();
+  navigate("/", { replace: true });
+
   const [title, setTitle] = useState("简单博客");
   return (
     <main className={styles.main}>
@@ -45,7 +49,14 @@ const Login = () => {
               },
             }}
           >
-            <Button className="btn-login" type="primary" htmlType="submit">
+            <Button
+              className="btn-login"
+              type="primary"
+              htmlType="submit"
+              onClick={() => {
+                navigate("/Blog", { replace: true });
+              }}
+            >
               登录
             </Button>
           </Form.Item>

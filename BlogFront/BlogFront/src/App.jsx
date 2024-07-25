@@ -1,14 +1,10 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import "antd/dist/reset.css";
 import "./App.scss";
+import { RouterProvider } from "react-router-dom";
+import customRouter from "./modules/router/router";
 
-import Login from "./pages/Login/Login";
-
-function App() {
-  const [count, setCount] = useState(0);
-
-  return <Login></Login>;
-}
+const App = () => {
+  return <RouterProvider router={customRouter} />;
+};
 
 export default App;
