@@ -2,12 +2,20 @@ import React, { useState } from "react";
 import styles from "./SkySider.module.scss";
 
 import classNames from "classnames";
-import { Layout } from "antd";
 
-const { Header, Sider, Content } = Layout;
+import Tag from "./Tag/Tag";
+import User from "./User/User";
+
+import { Flex } from "antd";
 
 const SkySider = () => {
-  return <div></div>;
+  return (
+    <Flex className={styles.flexSkySider}>
+      <User></User>
+      <Tag></Tag>
+      <Tag></Tag>
+    </Flex>
+  );
 };
 
 export default SkySider;

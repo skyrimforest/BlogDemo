@@ -1,0 +1,23 @@
+@import "../../../styles/common.scss";
+
+$back-color: rgba(0, 0, 0, 0);
+
+// Sider主体
+@mixin flexSkySiderCommon {
+  width: 50vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $back-color;
+  border-radius: 15px 15px 15px 15px;
+
+  @include song-font-regular;
+}
+
+.flexSkySider {
+  margin-top: 3vh;
+  margin-right: 50vw;
+  @include flexSkySiderCommon;
+}
