@@ -10,6 +10,9 @@ $hover-color: rgba(255, 255, 255, 0.8);
   border-radius: 0 0 15px 15px;
   background-color: $bkg-color;
 
+  grid-column: 2/4;
+  grid-row: 1;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;

@@ -54,7 +54,7 @@ const Login = () => {
               type="primary"
               htmlType="submit"
               onClick={() => {
-                navigate("/Blog", { replace: true });
+                navigate("/Blog", { replace: false });
               }}
             >
               登录

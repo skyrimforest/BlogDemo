@@ -13,11 +13,14 @@ $back-color: rgba(0, 0, 0, 0);
   background-color: $back-color;
   border-radius: 15px 15px 15px 15px;
 
+  grid-column: 2;
+  grid-row: 2;
+
   @include song-font-regular;
 }
 
 .flexSkySider {
-  margin-top: 3vh;
-  margin-right: 50vw;
+  // margin-top: 1vh;
+  // margin-right: 50vw;
   @include flexSkySiderCommon;
 }

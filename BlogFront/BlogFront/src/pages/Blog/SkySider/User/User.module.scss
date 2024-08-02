@@ -4,8 +4,8 @@ $back-color: rgba(236, 153, 232, 0.8);
 
 // Sider主体
 @mixin flexUserCommon {
-  width: 20%;
-  height: 30%;
+  width: 40%;
+  height: 50%;
   display: flex;
   align-items: flex-start;
   background-color: $back-color;
@@ -15,7 +15,5 @@ $back-color: rgba(236, 153, 232, 0.8);
 }
 
 .flexUser {
-  margin-top: 3%;
-  margin-right: 5%;
   @include flexUserCommon;
 }
