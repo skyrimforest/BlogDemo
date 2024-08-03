@@ -16,6 +16,11 @@ const Blog = () => {
           styles.divBlogWrapperH,
         ])}
       >
+        {/* <div className={styles.header}>hello</div>
+
+        <div className={styles.siderbar}>hello</div>
+        <div className={styles.blogbody}>hello</div> */}
+
         <SkyHeader>233</SkyHeader>
         <SkySider>233</SkySider>
         <SkyContent>233</SkyContent>

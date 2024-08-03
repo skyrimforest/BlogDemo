@@ -2,16 +2,13 @@ import React, { useState } from "react";
 import styles from "./SkyContent.module.scss";
 
 import classNames from "classnames";
-import { Layout } from "antd";
-
-const { Header, Sider, Content } = Layout;
+import { Flex } from "antd";
 
 const SkyContent = () => {
-  return (
-    <div>
-      
-    </div>
-  );
+  return <Flex className={styles.flexContent}>
+    <nav></nav>
+
+  </Flex>;
 };
 
 export default SkyContent;

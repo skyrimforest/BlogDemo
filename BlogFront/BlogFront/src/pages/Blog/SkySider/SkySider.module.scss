@@ -4,8 +4,8 @@ $back-color: rgba(0, 0, 0, 0);
 
 // Sider主体
 @mixin flexSkySiderCommon {
-  width: 50vw;
-  height: 80vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -13,8 +13,7 @@ $back-color: rgba(0, 0, 0, 0);
   background-color: $back-color;
   border-radius: 15px 15px 15px 15px;
 
-  grid-column: 2;
-  grid-row: 2;
+  grid-area: siderbar;
 
   @include song-font-regular;
 }
